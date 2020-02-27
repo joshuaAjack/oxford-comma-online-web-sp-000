@@ -1,9 +1,9 @@
-def oxford_comma(array)
-  if array.size == 1
-    return array[0]
-  elsif array.size == 2
-    return array.join(" and ")
+def oxford_comma(arr)
+  if arr.size == 1
+    return arr[0]
+  elsif arr.size == 2
+    return arr.join(" and ")
   else
-    return array[0..-2].join(', ') + ", and " + array[-1]
+    return arr[0..-2].join(', ') + ", and " + arr[-1]
   end
 end
